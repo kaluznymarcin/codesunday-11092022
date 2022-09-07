@@ -1,0 +1,49 @@
+.game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    outline: none;
+}
+
+.game .arenaContainer {
+    position: absolute;
+    display: flex;
+    inset: 4em 0 0 0;
+}
+
+.game .panel {
+    height: 4em;
+    font-size: 1em;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.game .arenaContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: green url(../images/bg.jpg) no-repeat center center;
+    background-size: cover;
+    filter: blur(0.125em) brightness(0.7);
+}
+
+.game .arenaContainer > div >.mole {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5) url(../images/mole.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow: 0 0 2px rgb(255, 0, 0)
+}
+
+.arenaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.arenaContainer > div {
+    position: relative;
+    z-index: 2;
+}

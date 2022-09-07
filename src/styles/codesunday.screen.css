@@ -1,0 +1,38 @@
+html,body,div,p,h1,h2,h3,h4,h5,h6,
+ul,ol,li,dl,dt,dd,form,fieldset,caption,legend,
+table,tr,td,th,address,blockquote,img {
+	margin:0;
+	padding:0;
+}
+
+img, fieldset {
+	border:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+body *, *:after, *:before {
+	box-sizing:border-box;
+}
+
+button, label, summary {
+	cursor:pointer;
+}
+
+html, body {
+	height: 100%;
+}
+
+input[hidden] {
+	display:block;
+	position:absolute;
+	left: -200vw;
+}
+
+body, button, input, table, textarea, select {
+	font-size:1rem;
+	line-height:1.5;
+	font-family: poppins, arial, helvetica, sans-serif;
+}
