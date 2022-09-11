@@ -16,6 +16,7 @@
     height: 4em;
     font-size: 1em;
     background-color: hsl(0, 0%, 0%);
+    color:hsl(0, 0%, 100%);
 }
 
 .game .arenaContainer {
